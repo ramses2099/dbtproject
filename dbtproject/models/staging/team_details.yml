@@ -1,0 +1,18 @@
+
+version: 2
+
+models:
+  - name: team_details
+    description: >
+      "A list of few NBA teams that made the Playoffs in 2020"
+    columns:
+      - name: Name
+        description: "The name of the team"
+
+      - name: City
+        description: "The city of the team"
+        data_tests:
+          - is_la_team
+
+      - name: State
+        description: "The state of the team"
